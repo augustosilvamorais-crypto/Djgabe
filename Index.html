@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DJ NIGHT VIBES</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2>DJ NIGHT VIBES</h2>
+
+        <ul>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#orcamento">Orçamento</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <h1>Transformando Eventos em Experiências</h1>
+        <p>DJ profissional para festas, casamentos, aniversários e eventos corporativos.</p>
+
+        <a href="#orcamento" class="btn">
+            Solicitar Orçamento
+        </a>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="card">
+        <h3 id="eventos">0</h3>
+        <p>Eventos Realizados</p>
+    </div>
+
+    <div class="card">
+        <h3 id="clientes">0</h3>
+        <p>Clientes Satisfeitos</p>
+    </div>
+
+    <div class="card">
+        <h3 id="anos">0</h3>
+        <p>Anos de Experiência</p>
+    </div>
+</section>
+
+<section id="agenda" class="agenda">
+    <h2>Agenda de Eventos</h2>
+
+    <div class="evento">
+        <h3>Festival Summer Beats</h3>
+        <span>15/07/2026</span>
+        <p>Curitiba - PR</p>
+    </div>
+
+    <div class="evento">
+        <h3>Casamento Premium</h3>
+        <span>28/07/2026</span>
+        <p>Joinville - SC</p>
+    </div>
+
+    <div class="evento">
+        <h3>Open Air Sunset</h3>
+        <span>10/08/2026</span>
+        <p>Florianópolis - SC</p>
+    </div>
+</section>
+
+<section id="orcamento" class="orcamento">
+
+    <h2>Simulador de Orçamento</h2>
+
+    <div class="box">
+
+        <label>Tipo de Evento</label>
+
+        <select id="tipo">
+            <option value="800">Aniversário</option>
+            <option value="1500">Casamento</option>
+            <option value="2000">Corporativo</option>
+            <option value="2500">Festival</option>
+        </select>
+
+        <label>Horas</label>
+        <input type="number" id="horas" value="4">
+
+        <label>Iluminação Profissional</label>
+        <input type="checkbox" id="luz">
+
+        <button onclick="calcular()">
+            Calcular
+        </button>
+
+        <h3 id="resultado">
+            Total: R$ 0,00
+        </h3>
+
+    </div>
+
+</section>
+
+<section id="galeria" class="galeria">
+
+    <h2>Galeria</h2>
+
+    <div class="grid">
+
+        <img src="https://images.unsplash.com/photo-1571266028243-d220c9f8d6f3">
+        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f">
+        <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d">
+        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a">
+
+    </div>
+
+</section>
+
+<section class="playlist">
+
+    <h2>Estilos Musicais</h2>
+
+    <div class="musicas">
+
+        <div>🎧 Funk</div>
+        <div>🎵 House</div>
+        <div>🔥 Eletrônica</div>
+        <div>🎤 Pop</div>
+        <div>🎸 Rock</div>
+        <div>🎶 Flashback</div>
+
+    </div>
+
+</section>
+
+<section class="depoimentos">
+
+    <h2>Depoimentos</h2>
+
+    <div class="cards">
+
+        <div class="dep">
+            "Incrível! Animou nossa festa inteira."
+            <strong>- Mariana</strong>
+        </div>
+
+        <div class="dep">
+            "Som impecável e iluminação perfeita."
+            <strong>- Carlos</strong>
+        </div>
+
+        <div class="dep">
+            "Melhor DJ da região!"
+            <strong>- Fernanda</strong>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contato" class="contato">
+
+    <h2>Contato</h2>
+
+    <form>
+
+        <input type="text" placeholder="Nome">
+
+        <input type="email" placeholder="Email">
+
+        <textarea placeholder="Mensagem"></textarea>
+
+        <button>
+            Enviar
+        </button>
+
+    </form>
+
+</section>
+
+<footer>
+    © 2026 DJ NIGHT VIBES
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
